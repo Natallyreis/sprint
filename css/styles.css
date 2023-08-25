@@ -502,3 +502,28 @@ body {
   text-align: center;
   padding: 30px;
 }
+#product-area {
+  background-color: #f9f9f9;
+  padding: 3rem;
+  text-align: center;
+  align-items: center;
+}
+
+#product-area h2 {
+  color: #333;
+}
+
+.product-price {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+#product-area p{
+  color: #333;
+}
+.form-select{
+  width: 100px;
+  align-items: center;
+  margin-left: 40%;
+}
+
