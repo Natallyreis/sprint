@@ -94,10 +94,10 @@
 <div class="container" id="product-area">
     <div class="row">
       <div class="col-md-6">
-        <img src="path/to/product-image.jpg" alt="Product Image" class="img-fluid">
+        <img src="azul.jpg" alt="Product Image" class="img-fluid">
       </div>
       <div class="col-md-6">
-        <h2>CAMISA</h2>
+        <h2>CAMISA REGATA</h2>
         <p>CAMISA</p>
         <p class="product-price">Price: $XX.XX</p>
         <label for="size"><p>Select Size:</p></label>
@@ -112,10 +112,19 @@
           <option value="G3">G3</option>
           <option value="G4">G4</option>
           <option value="G5">G5</option>
-        </select>
+        </select>  
         <br>
+        <label for="size"><p>Select Color:</p></label> 
+        <select class="form-select" id="color" name="color" onchange="changeShirtColor()">
+            <option value="white">Branco</option>
+            <option value="blue">Azul</option>
+            <option value="black">Preto</option>
+          </select>   
+<br>
         <button class="secondary-bg-color" style="border-radius: 5px;" id="">Buy Now</button>
-        <div id="botaoadd"><a href="#" id="adicionarCarrinho" onclick="adicionarAoCarrinho()">ADICIONAR AO CARRINHO</a></div>
+        <br>
+        <br>
+        <div id="botaoadd"><a href="#" style="text-decoration: none; color:#050A30" id="adicionarCarrinho" onclick="adicionarAoCarrinho()">ADICIONAR AO CARRINHO</a></div>
       </div>
     </div>
   </div>
@@ -124,10 +133,11 @@
 <script>
 
 function adicionarAoCarrinho() {
-  var produto = "CAMISA"; // Nome do produto
+  var produto = "CAMISA REGATA"; // Nome do produto
   var tamanho = document.getElementById("size").value; // Capturar o valor do tamanho selecionado
+  var cor = document.getElementById("color").value;
   var quantidade = 1; // Quantidade do produto
-  var preco = 67.00; // Preço do produto
+  var preco = 49.90; // Preço do produto
 
   // Encontre uma posição vazia no carrinho
   var i = 1;
@@ -136,15 +146,25 @@ function adicionarAoCarrinho() {
   }
 
   // Adicione os dados do produto à localStorage
-  localStorage.setItem("produto" + i, produto + " " + "tamanho" + " " + tamanho); // Incluindo o tamanho
+  localStorage.setItem("produto" + i, produto + " " + "Tamanho:" + " " + tamanho + " " + "Cor:" + " " + cor); // Incluindo tamanho e cor
   localStorage.setItem("qtd" + i, quantidade);
   localStorage.setItem("valor" + i, preco);
 
   // Atualize a página para exibir o produto adicionado no carrinho
   location.reload();
 }
+function changeShirtColor() {
+  var selectedColor = document.getElementById("color").value;
+  var imgElement = document.querySelector('.img-fluid');
 
+  if (selectedColor === "white") {
+    imgElement.src = "azul.jpg";
+  } else if (selectedColor === "blue") {
+    imgElement.src = "regata.jpg";
+  } else if (selectedColor === "black") {
+    imgElement.src = "regata2.jpg";
+  }
+}
 </script>
 </body>
 </html>
-</html>  
