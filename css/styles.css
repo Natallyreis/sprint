@@ -324,7 +324,10 @@ body {
 
 /* BOTTOM BANNER */
 #bottom-banner {
-  background-color: #101010; 
+  background-image: url(https://mail.google.com/mail/u/0?ui=2&ik=f0494ca10c&attid=0.1.1&permmsgid=msg-f:1775227869880125084&th=18a2e0579394069c&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ_T02E832D5WeErKwhXNN7nRiGW307lnGBQbriQSGMr5djSslYurzwEUkO4_3XcFSuBXa3vs1n3Pypj5mZXw7HvGFBTfE9T23r0H6ZTWSH0lpqONV15vVC7fuQ&disp=emb);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   padding: 6em;
   margin-bottom: 4em;
   text-align: center;
@@ -343,7 +346,7 @@ body {
 }
 
 #bottom-banner img {
-  max-width: 175px;
+  max-width: 300px;
 }
 
 @media(min-width: 768px) {
