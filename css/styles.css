@@ -34,6 +34,18 @@ body {
 .light-color {
   color: #FCF5EB
 }
+.silver{
+  color: rgb(143, 143, 143);
+}
+.gold{
+  color: rgb(206, 194, 79);
+}
+.diamond{
+  color: rgb(0, 73, 95);
+}
+.platinium{
+  color: rgb(207, 207, 207);
+}
 
 /* NAVBAR */
 #navbar .navbar-nav {
@@ -226,11 +238,11 @@ body {
 }
 
 #mini-banners .col-12 a:hover {
-  color: #101010;
+  color: #7EC8E3;
 }
 
 #mini-banners #mini-banner-1 a:hover {
-  color: #C09578;
+  color: #78b6c0;
 }
 
 #mini-banners #mini-banner-3 a {
@@ -238,12 +250,20 @@ body {
 }
 
 #mini-banners #mini-banner-3 a:hover {
-  color: #C09578;
+  color: #263396;
 }
 
 #mini-banner-1{
-  background-image: url(https://tecnofit-site.s3.sa-east-1.amazonaws.com/media/files/2023/02/13111808/investimento-em-academia-de-musculacao.png);
-  width: 270px;
+  background-image: url(https://mail.google.com/mail/u/0?ui=2&ik=f0494ca10c&attid=0.1.1&permmsgid=msg-f:1775223132463417875&th=18a2dc088f89ca13&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ9SQQ-4V2RZRNVpVxTCaBo34qwKkvQc8seHHnyEf7jw3PuPDXteswV2wLO5qWQi4f7uwJECn6AZiqZ6BkytuQjcpndfkKel6j70arGi2ji5fO7wNKZ5Z8CkJlQ&disp=emb);
+}
+#mini-banner-2{
+  background-image: url(https://mail.google.com/mail/u/0?ui=2&ik=f0494ca10c&attid=0.1.1&permmsgid=msg-f:1775223341351761874&th=18a2dc393240f7d2&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ86fpyqzFbON_wD2gchn_77af93vigtFmF0zGnGm2OThWDW4YNZ7jQJtvvr_Bjq4rJ_IPPJvm3IDt2DkI6zjds3miEGKhAzYN8AcDnmP9l2162oiKi8K2_lSzE&disp=emb);
+}
+#mini-banner-3{
+  background-image: url(https://mail.google.com/mail/u/0?ui=2&ik=f0494ca10c&attid=0.1.1&permmsgid=msg-f:1775223357176733279&th=18a2dc3ce17ede5f&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ_EsmEvM8x71ew0S96_RLJYBGTJkXhWzuZLieUKHpwFCp3eouRg16zxtnN-mSfYjrdNThYpE2bwhj40oNN4dGsEEDD_cgYscJKRCQfw_LL91RXeXsEwkBle1PI&disp=emb);
+}
+#mini-banner-4{
+  background-image: url(https://mail.google.com/mail/u/0?ui=2&ik=f0494ca10c&attid=0.1.1&permmsgid=msg-f:1775223415774993140&th=18a2dc4a86395af4&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ91qE8Z_1wDclh3wixhfHD551LxljrS0eUY2unTJCyDIny9ndJoVKGASQqwV7-bOmfVAOY8iDyiHVd8twq24uu4whO-ahIj2IeKLLiZPvkDPvl4m4KWjWNhP_g&disp=emb);
 }
 
 /* BEST SELLERS */
