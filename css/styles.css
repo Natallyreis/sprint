@@ -3,16 +3,16 @@
 }
 
 body {
-  background-color: #252525;
+  background-color: #050A30;
   color: #FFF;
 }
 
 .primary-bg-color {
-  background-color: #252525;
+  background-color: #050A30;
 }
 
 .secondary-bg-color {
-  background-color: #C09578;
+  background-color: #7EC8E3;
 }
 
 .light-bg-color {
@@ -24,11 +24,11 @@ body {
 }
 
 .primary-color {
-  color: #C09578;
+  color: #7EC8E3;
 }
 
 .secondary-color {
-  color: #626262;
+  color: #263396;
 }
 
 .light-color {
@@ -188,8 +188,9 @@ body {
 
 #mini-banners .col-12 {
   z-index: 1;
-  height: 300px;
-  padding: 1.5em;
+  height: 540px;
+  width: 270px;
+  padding: 1em;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -238,6 +239,11 @@ body {
 
 #mini-banners #mini-banner-3 a:hover {
   color: #C09578;
+}
+
+#mini-banner-1{
+  background-image: url(https://tecnofit-site.s3.sa-east-1.amazonaws.com/media/files/2023/02/13111808/investimento-em-academia-de-musculacao.png);
+  width: 270px;
 }
 
 /* BEST SELLERS */
