@@ -254,16 +254,16 @@ body {
 }
 
 #mini-banner-1{
-  background-image: url(https://mail.google.com/mail/u/0?ui=2&ik=f0494ca10c&attid=0.1.1&permmsgid=msg-f:1775223132463417875&th=18a2dc088f89ca13&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ9SQQ-4V2RZRNVpVxTCaBo34qwKkvQc8seHHnyEf7jw3PuPDXteswV2wLO5qWQi4f7uwJECn6AZiqZ6BkytuQjcpndfkKel6j70arGi2ji5fO7wNKZ5Z8CkJlQ&disp=emb);
+  background-image: url('../pct1.png');
 }
 #mini-banner-2{
-  background-image: url(https://mail.google.com/mail/u/0?ui=2&ik=f0494ca10c&attid=0.1.1&permmsgid=msg-f:1775223341351761874&th=18a2dc393240f7d2&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ86fpyqzFbON_wD2gchn_77af93vigtFmF0zGnGm2OThWDW4YNZ7jQJtvvr_Bjq4rJ_IPPJvm3IDt2DkI6zjds3miEGKhAzYN8AcDnmP9l2162oiKi8K2_lSzE&disp=emb);
+  background-image: url('../pct2.png');
 }
 #mini-banner-3{
-  background-image: url(https://mail.google.com/mail/u/0?ui=2&ik=f0494ca10c&attid=0.1.1&permmsgid=msg-f:1775223357176733279&th=18a2dc3ce17ede5f&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ_EsmEvM8x71ew0S96_RLJYBGTJkXhWzuZLieUKHpwFCp3eouRg16zxtnN-mSfYjrdNThYpE2bwhj40oNN4dGsEEDD_cgYscJKRCQfw_LL91RXeXsEwkBle1PI&disp=emb);
+  background-image: url('../pct3.png');
 }
 #mini-banner-4{
-  background-image: url(https://mail.google.com/mail/u/0?ui=2&ik=f0494ca10c&attid=0.1.1&permmsgid=msg-f:1775223415774993140&th=18a2dc4a86395af4&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ91qE8Z_1wDclh3wixhfHD551LxljrS0eUY2unTJCyDIny9ndJoVKGASQqwV7-bOmfVAOY8iDyiHVd8twq24uu4whO-ahIj2IeKLLiZPvkDPvl4m4KWjWNhP_g&disp=emb);
+  background-image: url('../pct4.png');
 }
 
 /* BEST SELLERS */
@@ -324,7 +324,7 @@ body {
 
 /* BOTTOM BANNER */
 #bottom-banner {
-  background-image: url(https://mail.google.com/mail/u/0?ui=2&ik=f0494ca10c&attid=0.1.1&permmsgid=msg-f:1775227869880125084&th=18a2e0579394069c&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ_T02E832D5WeErKwhXNN7nRiGW307lnGBQbriQSGMr5djSslYurzwEUkO4_3XcFSuBXa3vs1n3Pypj5mZXw7HvGFBTfE9T23r0H6ZTWSH0lpqONV15vVC7fuQ&disp=emb);
+  background-image: url('../banner.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
