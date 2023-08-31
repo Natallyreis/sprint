@@ -129,19 +129,19 @@
       <div class="row justify-content-around">
         <div class="col-12 silver" id="mini-banner-1">
           <h2>SILVER</h2>
-          <a href="#">Assine Agora</a>
+          <a href="#" onclick="adicionarAoCarrinho()">Assine Agora</a>
         </div>
         <div class="col-12 gold" id="mini-banner-2">
           <h2>GOLD</h2>
-          <a href="#">Assine Agora</a>
+          <a href="#" onclick="adicionarAoCarrinho1()">Assine Agora</a>
         </div>
         <div class="col-12 diamond" id="mini-banner-3">
           <h2>DIAMOND</h2>
-          <a href="#">Assine Agora</a>
+          <a href="#" onclick="adicionarAoCarrinho2()">Assine Agora</a>
         </div>
         <div class="col-12 platinium" id="mini-banner-4">
           <h2>PLATINIUM</h2>
-          <a href="#">Assine Agora</a>
+          <a href="#" onclick="adicionarAoCarrinho3()">Assine Agora</a>
         </div>
       </div>
     </div>
@@ -156,7 +156,7 @@
         <p class="primary-color offer-subtitle">Venha nos visitar e ganhe uma...</p>
         <h2 class="light-color">AULA EXPERIMENTAL</h2>
         <p class="secondary-bg-color">Agende sua visita</p>
-        <a href="#" class="btn btn-primary">Local</a>
+        <a href="https://www.google.com.br/maps/place/Escola+SENAI+A.+Jacob+Lafer/@-23.6663679,-46.5211495,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce69d619d62a27:0x41f94d2be4af4536!8m2!3d-23.6663728!4d-46.5185746!16s%2Fg%2F1tfqbc0l?entry=ttu" class="btn btn-primary">Local</a>
       </div>
       <div class="col-12 col-md-4">
         <img src="logo4.png" alt="Relógio 7">
@@ -201,7 +201,7 @@
               <img src="coqueteleira.png" class="card-img-top img-fluid" alt="Relógio">
               <div class="card-body">
                 <p class="card-category">Coqueteleira</p>
-                <h5 class="card-title">Nome do produto</h5>
+                <h5 class="card-title">Coqueteleira</h5>
                 <p class="card-text">R$29,99</p>
                 <a href="index7.html" class="btn btn-primary">Comprar</a>
               </div>
@@ -311,5 +311,83 @@
       <p>Todos os direitos reservados @2023 <span class="primary-color">BodyFitness</span> - A sua academia preferida</p>
     </div>
   </footer>
+  <script>
+  function adicionarAoCarrinho() {
+  var produto = "PLANO SILVER"; // Nome do produto
+  var quantidade = 1; // Quantidade do produto
+  var preco = 49.90; // Preço do produto
+
+  // Encontre uma posição vazia no carrinho
+  var i = 1;
+  while (localStorage.getItem("produto" + i) !== null) {
+    i++;
+  }
+
+  // Adicione os dados do produto à localStorage
+  localStorage.setItem("produto" + i, produto + " "); // Incluindo tamanho e cor
+  localStorage.setItem("qtd" + i, quantidade);
+  localStorage.setItem("valor" + i, preco);
+
+  // Atualize a página para exibir o produto adicionado no carrinho
+  location.reload();
+}
+function adicionarAoCarrinho1() {
+  var produto = "PLANO GOLD"; // Nome do produto
+  var quantidade = 1; // Quantidade do produto
+  var preco = 99.90; // Preço do produto
+
+  // Encontre uma posição vazia no carrinho
+  var i = 1;
+  while (localStorage.getItem("produto" + i) !== null) {
+    i++;
+  }
+
+  // Adicione os dados do produto à localStorage
+  localStorage.setItem("produto" + i, produto + " "); // Incluindo tamanho e cor
+  localStorage.setItem("qtd" + i, quantidade);
+  localStorage.setItem("valor" + i, preco);
+
+  // Atualize a página para exibir o produto adicionado no carrinho
+  location.reload();
+}
+function adicionarAoCarrinho2() {
+  var produto = "PLANO DIAMOND"; // Nome do produto
+  var quantidade = 1; // Quantidade do produto
+  var preco = 149.90; // Preço do produto
+
+  // Encontre uma posição vazia no carrinho
+  var i = 1;
+  while (localStorage.getItem("produto" + i) !== null) {
+    i++;
+  }
+
+  // Adicione os dados do produto à localStorage
+  localStorage.setItem("produto" + i, produto + " "); // Incluindo tamanho e cor
+  localStorage.setItem("qtd" + i, quantidade);
+  localStorage.setItem("valor" + i, preco);
+
+  // Atualize a página para exibir o produto adicionado no carrinho
+  location.reload();
+}
+function adicionarAoCarrinho3() {
+  var produto = "PLANO PLATINIUM"; // Nome do produto
+  var quantidade = 1; // Quantidade do produto
+  var preco = 199.90; // Preço do produto
+
+  // Encontre uma posição vazia no carrinho
+  var i = 1;
+  while (localStorage.getItem("produto" + i) !== null) {
+    i++;
+  }
+
+  // Adicione os dados do produto à localStorage
+  localStorage.setItem("produto" + i, produto + " "); // Incluindo tamanho e cor
+  localStorage.setItem("qtd" + i, quantidade);
+  localStorage.setItem("valor" + i, preco);
+
+  // Atualize a página para exibir o produto adicionado no carrinho
+  location.reload();
+}
+  </script>
 </body>
 </html>
