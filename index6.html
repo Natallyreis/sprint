@@ -122,6 +122,7 @@
             <option value="white">Branco</option>
             <option value="blue">Azul</option>
             <option value="pink">Rosa</option>
+            <option value="black">Preta</option>
           </select>   
 <br>
         <button class="secondary-bg-color" style="border-radius: 5px;" id="">Buy Now</button>
@@ -179,6 +180,9 @@ function changeShirtColor() {
     imgElement.src = "sacola2.png";
   } else if (selectedColor === "pink") {
     imgElement.src = "sacola4.png";
+  }
+} else if (selectedColor === "black") {
+    imgElement.src = "sacola.png";
   }
 }
 </script>
