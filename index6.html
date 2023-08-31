@@ -94,29 +94,12 @@
 <div class="container" id="product-area">
     <div class="row">
       <div class="col-md-6">
-        <img src="sacola3.png" alt="Product Image" class="img-fluid">
+        <img src="sacola3.png" alt="Product Image" class="img-fluid" width="70%">
       </div>
       <div class="col-md-6">
-        <h2>MOCHILA<button class="btn favorite-btn" id="favorite-button" onclick="addToFavorites()">
-          <i class="bi bi-heart"></i>
-      </button></h2>
-  
-        <p>CAMISA</p>
-        <p class="product-price">Price: $35.00</p>
-        <label for="size"><p>Select Size:</p></label>
-        <select class="form-select" id="size" name="size">
-          <option value="PP">PP</option>
-          <option value="P">P</option>
-          <option value="M">M</option>
-          <option value="G">G</option>
-          <option value="GG">GG</option>
-          <option value="G1">G1</option>
-          <option value="G2">G2</option>
-          <option value="G3">G3</option>
-          <option value="G4">G4</option>
-          <option value="G5">G5</option>
-        </select>  
-        <br>
+        <h2>Sacola Body Fitness</h2>
+        <p class="product-price">Valor: R$35.00</p>
+
         <label for="size"><p>Select Color:</p></label> 
         <select class="form-select" id="color" name="color" onchange="changeShirtColor()">
             <option value="white">Branco</option>
@@ -150,7 +133,6 @@ function addToFavorites() {
 
 function adicionarAoCarrinho() {
   var produto = "MOCHILA"; // Nome do produto
-  var tamanho = document.getElementById("size").value; // Capturar o valor do tamanho selecionado
   var cor = document.getElementById("color").value;
   var quantidade = 1; // Quantidade do produto
   var preco = 35.00; // Preço do produto
@@ -162,7 +144,7 @@ function adicionarAoCarrinho() {
   }
 
   // Adicione os dados do produto à localStorage
-  localStorage.setItem("produto" + i, produto + " " + "Tamanho:" + " " + tamanho + " " + "Cor:" + " " + cor); // Incluindo tamanho e cor
+  localStorage.setItem("produto" + i, produto + " " + "Cor:" + " " + cor); // Incluindo tamanho e cor
   localStorage.setItem("qtd" + i, quantidade);
   localStorage.setItem("valor" + i, preco);
 
