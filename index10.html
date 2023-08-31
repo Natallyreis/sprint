@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Fav icon -->
-  <link rel="shortcut icon" href="logo4.png" type="image/x-icon">
-  <title>BodyFitness</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <title>ExactTime</title>
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +24,7 @@
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg primary-bg-color py-4 px-2" id="navbar">
     <div class="container">
-        <a class="navbar-brand" href="#"><img src="logo6.png" width="175px"></a>
+      <a class="navbar-brand" href="#"><img src="logo6.png" width="175px"></a>
       <div id="navbar-items">
         <div></div>
         <form class="d-flex" id="search-form">
@@ -45,7 +45,7 @@
             <span class="qty-info">5</span>
           </li>
           <li class="nav-item" id="bag-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="index1.html">
               <i class="bi bi-bag"></i>
               <b>R$ 1290,12</b>
             </a>
@@ -62,17 +62,17 @@
       </button>
       <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">
+          <a class="nav-link" href="#">
             Home
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="#new-products">
             Produtos
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="#bottom-banner">
             Promoções
           </a>
         </li>
@@ -82,81 +82,34 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="#gallery">
             Contato
           </a>
         </li>
       </ul>
     </div>
   </nav>
-  <br>
-		<h1>CARRINHO DE COMPRAS</h1>
-		<br>
-		<div id="fundo">
-		<!-- ... Your existing HTML ... -->
+  <div class="container" id="favorites-area">
+    <h2>Produtos Favoritos</h2>
+    <div id="favorites-list">
+      <!-- Produtos favoritos serão exibidos aqui -->
+    </div>
+  </div>
 
-    <div id="itens"> </div>
-    <br>
-    <div class="secondary-bg-color">Total: <span id="total"></span> </div>
-    
-    <script>
-      var total = 0; // variável que retorna o total dos produtos que estão na LocalStorage.
-			var i = 0;     // variável que irá percorrer as posições
-			var valor = 0; // variável que irá receber o preço do produto convertido em Float.
-	
-			// exibe o total dos recheios
-			document.getElementById("total").innerHTML = total.toFixed(2);
-	
-			for (i = 1; i <= 99; i++) {
-				var prod = localStorage.getItem("produto" + i);
-				if (prod != null) {
-					// Cria um elemento de div para cada item do carrinho
-					var itemDiv = document.createElement("div");
-	
-					// Exibe os dados do item dentro da div
-					itemDiv.innerHTML += localStorage.getItem("qtd" + i) + " x ";
-					itemDiv.innerHTML += localStorage.getItem("produto" + i);
-					itemDiv.innerHTML += " ";
-					itemDiv.innerHTML += "R$: " + localStorage.getItem("valor" + i);
-	
-					// Cria um botão de excluir para cada item
-					var excluirButton = document.createElement("button");
-					excluirButton.innerHTML = "Excluir";
-					excluirButton.addEventListener("click", createExcluirItemHandler(i));
-	
-					// Adiciona o botão de excluir à div do item
-					itemDiv.appendChild(excluirButton);
-	
-					// Adiciona a div do item à div "itens"
-					document.getElementById("itens").appendChild(itemDiv);
-	
-					valor = parseFloat(localStorage.getItem("valor" + i));
-					total = total + valor;
-				}
-			}
-			document.getElementById("total").innerHTML = total.toFixed(2);
-	
-			function createExcluirItemHandler(index) {
-				return function() {
-					// Lógica para excluir o item do carrinho
-					// Pode ser implementada aqui ou chamando uma função externa
-	
-					// Exemplo de código para remover o item atual do carrinho
-					this.parentNode.remove();
-	
-					// Atualizar o total
-					var itemValue = parseFloat(localStorage.getItem("valor" + index));
-					total -= itemValue;
-					document.getElementById("total").innerHTML = total.toFixed(2);
-	
-					// Remover o item da localStorage
-					localStorage.removeItem("produto" + index);
-					localStorage.removeItem("qtd" + index);
-					localStorage.removeItem("valor" + index);
-				}
-			}
-    </script>
-    
-    <button class="primary-color" type="button" id="limpar" onclick="localStorage.clear(); location.reload();">Limpar carrinho</button>
-    </body>
-    </html>
+  <script>
+    function addToFavorites() {
+      var favoriteButton = document.getElementById("favorite-button");
+      favoriteButton.classList.toggle("active");
+
+      if (favoriteButton.classList.contains("active")) {
+        var productName = "Nome do Produto Favorito"; // Substitua pelo nome do produto
+        var favoritesList = document.getElementById("favorites-list");
+
+        var favoriteItem = document.createElement("p");
+        favoriteItem.textContent = productName;
+        favoritesList.appendChild(favoriteItem);
+      }
+    }
+  </script>
+</body>
+</html>
