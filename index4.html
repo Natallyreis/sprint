@@ -93,14 +93,15 @@
 <!-- New Product Area -->
 <div class="container" id="product-area">
     <div class="row">
+        <div class="col-md-6">
+            <img src="moletompreto.png" alt="Product Image" class="img-fluid">
+          </div>
+          
       <div class="col-md-6">
-        <img src="branco.png" alt="Product Image" class="img-fluid">
-      </div>
-      <div class="col-md-6">
-        <h2>CAMISA REGATA</h2>
+        <h2>MOLETOM</h2>
         <p>CAMISA</p>
-        <p class="product-price">Price: $XX.XX</p>
-        <label for="size"><p>Select Size:</p></label>
+        <p class="product-price">Price: $140.90</p>
+        <label for="size"><p>Tamanho:</p></label>
         <select class="form-select" id="size" name="size">
           <option value="PP">PP</option>
           <option value="P">P</option>
@@ -114,11 +115,10 @@
           <option value="G5">G5</option>
         </select>  
         <br>
-        <label for="size"><p>Select Color:</p></label> 
+        <label for="size"><p>Cor:</p></label> 
         <select class="form-select" id="color" name="color" onchange="changeShirtColor()">
-            <option value="white">Branco</option>
-            <option value="blue">Azul</option>
             <option value="black">Preto</option>
+            <option value="white">Branco</option>
           </select>   
 <br>
         <button class="secondary-bg-color" style="border-radius: 5px;" id="">Buy Now</button>
@@ -133,11 +133,11 @@
 <script>
 
 function adicionarAoCarrinho() {
-  var produto = "CAMISA REGATA"; // Nome do produto
+  var produto = "MOLETOM"; // Nome do produto
   var tamanho = document.getElementById("size").value; // Capturar o valor do tamanho selecionado
   var cor = document.getElementById("color").value;
   var quantidade = 1; // Quantidade do produto
-  var preco = 49.90; // Preço do produto
+  var preco = 140.90; // Preço do produto
 
   // Encontre uma posição vazia no carrinho
   var i = 1;
@@ -157,12 +157,10 @@ function changeShirtColor() {
   var selectedColor = document.getElementById("color").value;
   var imgElement = document.querySelector('.img-fluid');
 
-  if (selectedColor === "white") {
-    imgElement.src = "branco.png";
-  } else if (selectedColor === "blue") {
-    imgElement.src = "azul.png";
-  } else if (selectedColor === "black") {
-    imgElement.src = "preto.png";
+  if (selectedColor === "black") {
+    imgElement.src = "moletompreto.png";
+  } else if (selectedColor === "white") {
+    imgElement.src = "moletombranco.png";
   }
 }
 </script>
