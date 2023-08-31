@@ -94,19 +94,41 @@
   </div>
 
   <script>
-    function addToFavorites() {
-      var favoriteButton = document.getElementById("favorite-button");
-      favoriteButton.classList.toggle("active");
+     document.addEventListener("DOMContentLoaded", function () {
+    var favoritesList = document.getElementById("favorites-list");
+    var favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
-      if (favoriteButton.classList.contains("active")) {
-        var productName = "Nome do Produto Favorito"; // Substitua pelo nome do produto
-        var favoritesList = document.getElementById("favorites-list");
+    favorites.forEach(function (productName) {
+      var favoriteItem = document.createElement("div");
+      favoriteItem.classList.add("favorite-item");
 
-        var favoriteItem = document.createElement("p");
-        favoriteItem.textContent = productName;
-        favoritesList.appendChild(favoriteItem);
-      }
+      var productNameElement = document.createElement("p");
+      productNameElement.textContent = productName;
+      favoriteItem.appendChild(productNameElement);
+
+      var removeButton = document.createElement("button");
+      removeButton.textContent = "Remover";
+      removeButton.onclick = function () {
+        manageFavorites(productName, "remove");
+        favoritesList.removeChild(favoriteItem);
+      };
+      favoriteItem.appendChild(removeButton);
+
+      favoritesList.appendChild(favoriteItem);
+    });
+  });
+
+  function manageFavorites(productName, action) {
+    var favoritesList = JSON.parse(localStorage.getItem("favorites")) || [];
+
+    if (action === "add" && !favoritesList.includes(productName)) {
+      favoritesList.push(productName);
+    } else if (action === "remove" && favoritesList.includes(productName)) {
+      favoritesList = favoritesList.filter(item => item !== productName);
     }
+
+    localStorage.setItem("favorites", JSON.stringify(favoritesList));
+  }
   </script>
 </body>
 </html>
