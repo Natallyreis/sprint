@@ -29,7 +29,7 @@
         <div></div>
         <form class="d-flex" id="search-form">
           <i class="bi bi-search primary-color"></i>
-          <input class="form-control me-2" type="search" placeholder="Busque o seu relógio..." aria-label="Search">
+          <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Search">
         </form>
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
@@ -45,6 +45,7 @@
           <li class="nav-item" id="bag-item">
             <a class="nav-link" href="index1.html">
               <i class="bi bi-bag"></i>
+              <b></b>
             </a>
           </li>
         </ul>
@@ -85,90 +86,87 @@
       </ul>
     </div>
   </nav>
-  <!-- New Product Area -->
-<!-- New Product Area -->
-<div class="container" id="product-area">
-    <div class="row">
-      <div class="col-md-6">
-        <img src="sacola3.png" alt="Product Image" class="img-fluid" width="70%">
-      </div>
-      <div class="col-md-6">
-        <h2>Sacola Body Fitness</h2>
-        <p class="product-price">Valor: R$35.00</p>
-
-        <label for="size"><p>Select Color:</p></label> 
-        <select class="form-select" id="color" name="color" onchange="changeShirtColor()">
-            <option value="white">Branco</option>
-            <option value="blue">Azul</option>
-            <option value="pink">Rosa</option>
-          </select>   
-<br>
-<div class="container11">
-  <a style="text-decoration: none; color:#000C66" class="btn btn-primary" href="index1.html" onclick="adicionarAoCarrinho()">Comprar</a>
-  <label class="container" style="color:#000C66" onclick="addToFavorites()">
-    <input checked="checked" type="checkbox">
-    <div class="checkmark">
-      <svg viewBox="0 0 256 256">
-      <rect fill="none" height="256" width="256"></rect>
-      <path d="M224.6,51.9a59.5,59.5,0,0,0-43-19.9,60.5,60.5,0,0,0-44,17.6L128,59.1l-7.5-7.4C97.2,28.3,59.2,26.3,35.9,47.4a59.9,59.9,0,0,0-2.3,87l83.1,83.1a15.9,15.9,0,0,0,22.6,0l81-81C243.7,113.2,245.6,75.2,224.6,51.9Z" stroke-width="20px" stroke="#FFF" fill="none"></path></svg>
-    </div>
-  </label>
+  <!-- FIM NAVBAR -->
+  <br><br><br>
+  <div class="blog">
+    <h1> Body Fitness</h1>
+    <br>
+    <ul>
+        <li>
+            <p>A Body Fetness é uma academia que foi criada em 2020 por Paulão, que queria oferecer um serviço diferente das academias tradicionais.</p>
+        </li>
+        <li>
+            <p>A academia tem mais de 500 membros e oferece treinamento pessoal, aulas de grupo, nutrição e outros serviços.</p>
+        </li>
+        <li> 
+            <p>A academia se destaca por ser acolhedora, inclusiva e acessível, além de se preocupar com os objetivos de fitness e saúde dos seus membros.</p>
+        </li>
+        <li>
+            <p>A academia está sempre buscando melhorar e adicionar novos serviços e programas para atender às necessidades dos alunos.</p>
+        </li>
+    </ul>
   </div>
-        <br>
-        <div id="botaoadd"><a href="#" style="text-decoration: none; color:#050A30" id="adicionarCarrinho" onclick="adicionarAoCarrinho()">ADICIONAR AO CARRINHO</a></div>
+  <br><br><br>
+
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container-fluid" id="footer-links-container">
+      <div class="row">
+        <div class="col-12 col-md-4 footer-column">
+          <h3>Páginas</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" class="secondary-color">Home</a></li>
+            <li class="mb-2"><a href="#" class="secondary-color">Categorias</a></li>
+            <li class="mb-2"><a href="#" class="secondary-color">Promoções</a></li>
+            <li class="mb-2"><a href="#" class="secondary-color">Contato</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 footer-column" id="footer-center">
+          <h3>BodyFitness</h3>
+          <p class="secondary-color">Algum dúvida? Ligue para nós</p>
+          <p class="store-phone"><i class="bi bi-telephone"></i> (50)99999-9999</p>
+        </div>
+        <div class="col-12 col-md-4 footer-column">
+          <h3>Informações</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index8.html" class="secondary-color">Política de Privacidade</a></li>
+            <li class="mb-2"><a href="#" class="secondary-color">Política de Entregas</a></li>
+            <li class="mb-2"><a href="https://rastreamento.correios.com.br/app/index.php" class="secondary-color">Rastreie seu pedido</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-  
+    <div class="container-fluid" id="newsletter-container">
+      <div class="col-12">
+        <div class="row">
+          <p class="secondary-color">Se inscreva na nossa Newsletter:</p>
+          <form class="d-flex" id="news-form">
+            <i class="bi bi-envelope primary-color"></i>
+            <input class="form-control me-2" placeholder="Insira seu e-mail">
+            <button class="btn secondary-bg-color" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-12" id="social-container">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-youtube"></i>
+        <i class="bi bi-twitter"></i>
+      </div>
+    </div>
+    <div class="container" id="copy-container">
+      <p>Todos os direitos reservados @2023 <span class="primary-color">BodyFitness</span> - A sua academia preferida</p>
+    </div>
+  </footer>
+  <style>
+    .blog{
+        position: relative;
+        margin-left:20% ;
+        margin-right:20% ;
+    }
+    h1{
+        text-align: center;
+    }
+  </style>
 </body>
-<script>
-function addToFavorites() {
-  var favoriteButton = document.getElementById("favorite-button");
-  favoriteButton.classList.toggle("active");
-
-  if (favoriteButton.classList.contains("active")) {
-    var productName = "CAMISA REGATA"; // Substitua pelo nome do produto
-    var favoritesList = document.getElementById("favorites-list");
-
-    var favoriteItem = document.createElement("p");
-    favoriteItem.textContent = productName;
-    favoritesList.appendChild(favoriteItem);
-  }
-}
-
-function adicionarAoCarrinho() {
-  var produto = "MOCHILA"; // Nome do produto
-  var cor = document.getElementById("color").value;
-  var quantidade = 1; // Quantidade do produto
-  var preco = 35.00; // Preço do produto
-
-  // Encontre uma posição vazia no carrinho
-  var i = 1;
-  while (localStorage.getItem("produto" + i) !== null) {
-    i++;
-  }
-
-  // Adicione os dados do produto à localStorage
-  localStorage.setItem("produto" + i, produto + " " + "Cor:" + " " + cor); // Incluindo tamanho e cor
-  localStorage.setItem("qtd" + i, quantidade);
-  localStorage.setItem("valor" + i, preco);
-
-  // Atualize a página para exibir o produto adicionado no carrinho
-  location.reload();
-}
-function changeShirtColor() {
-  var selectedColor = document.getElementById("color").value;
-  var imgElement = document.querySelector('.img-fluid');
-
-  if (selectedColor === "white") {
-    imgElement.src = "sacola3.png";
-  } else if (selectedColor === "blue") {
-    imgElement.src = "sacola2.png";
-  } else if (selectedColor === "pink") {
-    imgElement.src = "sacola4.png";
-  }
-
-}
-</script>
-</body>
-</html>
