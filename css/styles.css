@@ -15,52 +15,44 @@ img {
 }
 
 body {
-  background-color: #050A30;
+  background-color: #002776;
   color: #FFF;
 }
 
 .primary-bg-color {
-  background-color: #050A30;
+  background-color: #002776;
 }
 
 .secondary-bg-color {
-  background-color: #7EC8E3;
+  background-color: #009c3b;
 }
 
 .light-bg-color {
-  background-color: #FCF5EB
+  background-color: #ffcc00;
 }
 
 .dark-bg-color {
-  background-color: #101010;
+  background-color: #009c3b;
 }
 
 .primary-color {
-  color: #7EC8E3;
+  color: #002776;
 }
 
 .secondary-color {
-  color: #7EC8E3;
+  color: #009c3b;
 }
 
 .light-color {
-  color: #FCF5EB
+  color: #ffcc00;
 }
-.silver{
-  color: rgb(143, 143, 143);
-}
-.gold{
-  color: rgb(206, 194, 79);
-}
-.diamond{
-  color: rgb(0, 73, 95);
-}
-.platinium{
-  color: rgb(207, 207, 207);
-}
+
 
 
 /* NAVBAR */
+#logonav{
+  position: fixed;
+}
 #navbar .navbar-nav {
   flex-direction: row;
   justify-content: flex-end;
@@ -205,6 +197,29 @@ body {
   }
 }
 
+.planodefundo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.back-video {
+  height: auto;
+  width: 100%;
+  z-index: 6;
+  margin-top: -75px;
+  position: relative;
+  opacity: 1;
+  
+}
+.logosemfundo {
+  display: flex;
+  z-index: 7;
+  align-items: center;
+  position:absolute;
+}
+
 /* MINI BANNERS */
 #mini-banners {
   margin-top: -3em;
@@ -266,17 +281,42 @@ body {
   color: #263396;
 }
 
+.ministerios{
+  text-align: flex;
+  align-items: center;
+}
+
 #mini-banner-1{
   background-image: url('../pct1.png');
+  border-radius: 20px;
+}
+#mini-banner-1:hover {
+  transform: translateY(-7px);
+  box-shadow: 0px 10px 10px black;
 }
 #mini-banner-2{
   background-image: url('../pct2.png');
+  border-radius: 20px;
+}
+#mini-banner-2:hover {
+  transform: translateY(-7px);
+  box-shadow: 0px 10px 10px black;
 }
 #mini-banner-3{
   background-image: url('../pct3.png');
+  border-radius: 20px;
+}
+#mini-banner-3:hover {
+  transform: translateY(-7px);
+  box-shadow: 0px 10px 10px black;
 }
 #mini-banner-4{
   background-image: url('../pct4.png');
+  border-radius: 20px;
+}
+#mini-banner-4:hover {
+  transform: translateY(-7px);
+  box-shadow: 0px 10px 10px black;
 }
 
 /* BEST SELLERS */
